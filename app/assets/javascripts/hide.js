@@ -1,6 +1,13 @@
-function hideWhenClicked(event) {
-  var $target = $(event.target);
-  $target.hide();
-}
+$(document).ready(function(){
+    $("#hide_this").click(function(){
+        $("a").hide();
+    });
+  });
 
-$('#hide_this').click(hideWhenClicked);
+
+  function hideWhenClicked(event) {
+    var $target = $(event.target);
+    $target.hide();
+  }
+  
+  $('#hide_this').click(hideWhenClicked);
